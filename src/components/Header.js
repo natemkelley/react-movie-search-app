@@ -2,9 +2,11 @@ import React from "react";
 
 const Header = (props) => {
   return (
-    <header className="App-header">
-      <h2>{props.text}</h2>
-    </header>
+    <nav>
+    <div className="nav-wrapper">
+	<a className="brand-logo center" href="https://natemkelley.github.io">Kelley Movie Search</a>
+    </div>
+  </nav>
   );
 };
 

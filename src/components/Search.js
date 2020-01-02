@@ -18,14 +18,32 @@ const Search = props => {
   };
 
   return (
-    <form className="search">
-      <input
-        value={searchValue}
-        onChange={handleSearchInputChanges}
-        type="text"
-      />
-      <input onClick={callSearchFunction} type="submit" value="SEARCH" />
-    </form>
+      <form className="">
+              <div className="row search-bar">
+
+        <div className="input-field movie-input">
+          <i className="material-icons prefix">movie</i>
+          <input
+            id="icon_prefix"
+            type="text"
+            className="validate"
+            value={searchValue}
+            onChange={handleSearchInputChanges}
+          />
+        </div>
+        <div className="input-field search-btn">
+          <button
+            onClick={callSearchFunction}
+            type="submit"
+            value="SEARCH"
+            className="btn waves-effect waves-light"           >
+            Search
+            <i class="material-icons right">send</i>
+          </button>
+        </div>
+        </div>
+
+      </form>
   );
 };
 

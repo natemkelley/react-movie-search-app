@@ -30,7 +30,7 @@ const App = () => {
     fetch(`https://www.omdbapi.com/?s=${searchValue}&apikey=4a3b711b`)
       .then(response => response.json())
       .then(jsonResponse => {
-        console.log(jsonResponse)
+        console.log(jsonResponse);
         if (jsonResponse.Response === "True") {
           setMovies(jsonResponse.Search);
           setLoading(false);
@@ -45,8 +45,8 @@ const App = () => {
     <div className="App">
       <Header text="Kelley Movie Search" />
       <Search search={search} />
-      <p className="App-intro">Sharing a few of our favourite movies</p>
-      <div className="movies">
+
+      <div className="row">
         {loading && !errorMessage ? (
           <span>loading...</span>
         ) : errorMessage ? (
