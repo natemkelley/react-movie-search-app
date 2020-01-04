@@ -4,7 +4,7 @@ const Header = (props) => {
   return (
     <nav>
     <div className="nav-wrapper">
-	<a className="brand-logo center" href="https://natemkelley.github.io">Kelley Movie Search</a>
+	<a className="brand-logo center" href="https://natemkelley.github.io">{props.text}</a>
     </div>
   </nav>
   );

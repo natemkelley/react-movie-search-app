@@ -6,16 +6,14 @@ const DEFAULT_PLACEHOLDER_IMAGE =
 const Movie = ({ movie }) => {
   const poster =
     movie.Poster === "N/A" ? DEFAULT_PLACEHOLDER_IMAGE : movie.Poster;
-
   return (
     <div className="col s12 m4 l3">
-      <div class="card">
-        <div class="card-image">
+      <div className="card">
+        <div className="card-image">
           <img alt={`The movie titled is ${movie.Title}`} src={poster} />
         </div>
-        <div class="card-content">
-          <span class="card-title center-align">{movie.Title}</span>
-
+        <div className="card-content">
+          <span className="card-title center-align">{movie.Title}</span>
           <p>({movie.Year})</p>
         </div>
       </div>

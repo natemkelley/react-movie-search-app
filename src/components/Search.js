@@ -38,7 +38,7 @@ const Search = props => {
             value="SEARCH"
             className="btn waves-effect waves-light"           >
             Search
-            <i class="material-icons right">send</i>
+            <i className="material-icons right">send</i>
           </button>
         </div>
         </div>
